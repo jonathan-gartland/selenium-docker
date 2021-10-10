@@ -1,9 +1,10 @@
 pipeline {
     agent none
+
     stages {
         stage('Build Jar') {
             agent {
-                dockerfile {
+                docker {
                     image 'maven:3-alpine'
                     args '-v /root/.m2:/root/.m2'
                 }
@@ -12,19 +13,21 @@ pipeline {
                 sh 'mvn clean package -DskipTests'
             }
         }
+
         stage('Build Image') {
             steps {
                 script {
-                	app = docker.build("vinsdocker/selenium-docker")
+                	app = docker.build("jonathan-gartland/selenium-docker")
                 }
             }
         }
+
         stage('Push Image') {
             steps {
                 script {
-			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-			        	app.push("${BUILD_NUMBER}")
-			            app.push("latest")
+			docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+				app.push("${BUILD_NUMBER}")
+				app.push("latest")
 			        }
                 }
             }
