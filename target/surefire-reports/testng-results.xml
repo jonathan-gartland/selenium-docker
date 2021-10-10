@@ -2,12 +2,12 @@
 <testng-results ignored="4" total="10" passed="0" failed="1" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-10T20:54:18Z" name="Command line suite" finished-at="2021-10-10T20:54:19Z" duration-ms="450">
+  <suite started-at="2021-10-10T21:07:53Z" name="Command line suite" finished-at="2021-10-10T21:07:54Z" duration-ms="537">
     <groups>
     </groups>
-    <test started-at="2021-10-10T20:54:18Z" name="Command line test" finished-at="2021-10-10T20:54:19Z" duration-ms="450">
+    <test started-at="2021-10-10T21:07:53Z" name="Command line test" finished-at="2021-10-10T21:07:54Z" duration-ms="537">
       <class name="com.searchmodule.tests.SearchTest">
-        <test-method signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@d44fc21]" started-at="2021-10-10T20:54:19Z" name="search" finished-at="2021-10-10T20:54:19Z" duration-ms="0" status="FAIL">
+        <test-method signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@d44fc21]" started-at="2021-10-10T21:07:54Z" name="search" finished-at="2021-10-10T21:07:54Z" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -60,7 +60,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
         </test-method> <!-- search -->
       </class> <!-- com.searchmodule.tests.SearchTest -->
       <class name="com.tests.BaseTest">
-        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.tests.BaseTest@3fd7a715]" started-at="2021-10-10T20:54:18Z" name="setupDriver" finished-at="2021-10-10T20:54:19Z" duration-ms="433" status="FAIL">
+        <test-method is-config="true" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.tests.BaseTest@3fd7a715]" started-at="2021-10-10T21:07:53Z" name="setupDriver" finished-at="2021-10-10T21:07:54Z" duration-ms="522" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -160,17 +160,17 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T20:54:19Z" name="setupParameters" finished-at="2021-10-10T20:54:19Z" depends-on-methods="com.tests.BaseTest.setupDriver" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T21:07:54Z" name="setupParameters" finished-at="2021-10-10T21:07:54Z" depends-on-methods="com.tests.BaseTest.setupDriver" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupParameters -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tests.BaseTest@3fd7a715]" started-at="2021-10-10T20:54:19Z" name="quitDriver" finished-at="2021-10-10T20:54:19Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.tests.BaseTest@3fd7a715]" started-at="2021-10-10T21:07:54Z" name="quitDriver" finished-at="2021-10-10T21:07:54Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.tests.BaseTest -->
       <class name="com.newtours.tests.BookFlightTest">
-        <test-method signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T20:54:19Z" name="registrationPage" finished-at="2021-10-10T20:54:19Z" duration-ms="0" status="SKIP">
+        <test-method signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T21:07:54Z" name="registrationPage" finished-at="2021-10-10T21:07:54Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -263,7 +263,7 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPage -->
-        <test-method signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T20:54:19Z" name="flightDetailsPage" finished-at="2021-10-10T20:54:19Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" duration-ms="0" status="SKIP">
+        <test-method signature="flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T21:07:54Z" name="flightDetailsPage" finished-at="2021-10-10T21:07:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationConfirmationPage" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd] depends on not successfully finished methods]]>
@@ -304,7 +304,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailsPage -->
-        <test-method signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T20:54:19Z" name="registrationConfirmationPage" finished-at="2021-10-10T20:54:19Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" duration-ms="0" status="SKIP">
+        <test-method signature="registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T21:07:54Z" name="registrationConfirmationPage" finished-at="2021-10-10T21:07:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd] depends on not successfully finished methods]]>
@@ -345,7 +345,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationConfirmationPage -->
-        <test-method signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T20:54:19Z" name="findFlightPage" finished-at="2021-10-10T20:54:19Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" duration-ms="0" status="SKIP">
+        <test-method signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T21:07:54Z" name="findFlightPage" finished-at="2021-10-10T21:07:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailsPage" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd] depends on not successfully finished methods]]>
@@ -386,7 +386,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightPage -->
-        <test-method signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T20:54:19Z" name="flightConfirmationPage" finished-at="2021-10-10T20:54:19Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" duration-ms="0" status="SKIP">
+        <test-method signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd]" started-at="2021-10-10T21:07:54Z" name="flightConfirmationPage" finished-at="2021-10-10T21:07:54Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@26aa12dd] depends on not successfully finished methods]]>
