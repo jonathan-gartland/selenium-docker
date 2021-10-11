@@ -15,19 +15,19 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	app = docker.build("jonathan-gartland/selenium-docker")
+                	app = docker.build("selenium-docker")
                 }
             }
         }
-        stage('Push Image') {
-            steps {
-                script {
-			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-			        	app.push("${BUILD_NUMBER}")
-			            app.push("latest")
-			        }
-                }
-            }
-        }
+//         stage('Push Image') {
+//             steps {
+//                 script {
+// 			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+// 			        	app.push("${BUILD_NUMBER}")
+// 			            app.push("latest")
+// 			        }
+//                 }
+//             }
+//         }
     }
 }
